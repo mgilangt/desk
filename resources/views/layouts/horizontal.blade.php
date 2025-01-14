@@ -203,12 +203,12 @@
                     aria-expanded="false">
                     <img class="rounded-circle header-profile-user"
                         src="{{ URL::asset('build/images/users/avatar-3.jpg') }}" alt="Header Avatar">
-                    <span class="d-none d-xl-inline-block ms-2 fw-medium font-size-15">Martin Gurley</span>
+                    <span class="d-none d-xl-inline-block ms-2 fw-medium font-size-15">Admin</span>
                 </button>
                 <div class="dropdown-menu dropdown-menu-end pt-0">
                     <div class="p-3 border-bottom">
-                        <h6 class="mb-0">Martin Gurley</h6>
-                        <p class="mb-0 font-size-11 text-muted">martin.gurley@email.com</p>
+                        <h6 class="mb-0">Admin</h6>
+                        <p class="mb-0 font-size-11 text-muted">admin@email.com</p>
                     </div>
                     <a class="dropdown-item" href="javascript:void(0);"><i
                             class="mdi mdi-account-circle text-muted font-size-16 align-middle me-2"></i> <span

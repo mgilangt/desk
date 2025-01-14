@@ -13,6 +13,35 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+use Mike42\Escpos\Printer;
+use Mike42\Escpos\PrintConnectors\WindowsPrintConnector;
+use Mike42\Escpos\PrintConnectors\FilePrintConnector;
+
+Route::get('/test-print', function () {
+    try {
+        // **Untuk Printer USB**
+        // Ganti "Nama_Printer" dengan nama printer yang sesuai di sistem Anda
+        $connector = new WindowsPrintConnector("Nama_Printer");
+
+        // **Untuk Printer Bluetooth**
+        // Uncomment baris di bawah ini jika menggunakan Bluetooth
+        // $connector = new FilePrintConnector("/dev/rfcomm0");
+
+        $printer = new Printer($connector);
+
+        // Cetak teks sederhana
+        $printer->setJustification(Printer::JUSTIFY_CENTER);
+        $printer->text("Hello, Thermal Printer!\n");
+        $printer->text(date('Y-m-d H:i:s') . "\n");
+        $printer->feed(2); // Tambah spasi kosong
+        $printer->cut(); // Potong kertas
+        $printer->close();
+
+        return "Cetak berhasil!";
+    } catch (Exception $e) {
+        return "Terjadi kesalahan: " . $e->getMessage();
+    }
+});
 
 
 Auth::routes();
