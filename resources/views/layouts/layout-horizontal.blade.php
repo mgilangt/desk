@@ -8,7 +8,7 @@
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesdesign" name="author" />
     <!-- App favicon -->
-    <link rel="shortcut icon" href="{{ URL::asset('build/images/favicon.ico') }}">
+    <link rel="shortcut icon" href="https://kopapdi-admin.iamevent.my.id/assets/media/logos/kopapdi.png">
 
     <!-- include head css -->
     @include('layouts.head-css')
@@ -16,38 +16,38 @@
 
 @yield('body')
 
-    <!-- Begin page -->
-    <div id="layout-wrapper">
+<!-- Begin page -->
+<div id="layout-wrapper">
 
-            <!-- horizontal -->
-            @include('layouts.horizontal')
+    <!-- horizontal -->
+    @include('layouts.horizontal')
 
-            <!-- ============================================================== -->
-            <!-- Start right Content here -->
-            <!-- ============================================================== -->
-            <div class="main-content">
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="main-content">
 
-                <div class="page-content">
-                    <div class="container-fluid">
-                        @yield('content')
-                    </div>
-                    <!-- container-fluid -->
-                </div>
-                <!-- End Page-content -->
-
-                <!-- footer -->
-                @include('layouts.footer')
-
+        <div class="page-content">
+            <div class="container-fluid">
+                @yield('content')
             </div>
-            <!-- end main content-->
+            <!-- container-fluid -->
+        </div>
+        <!-- End Page-content -->
+
+        <!-- footer -->
+        @include('layouts.footer')
+
     </div>
-    <!-- END layout-wrapper -->
+    <!-- end main content-->
+</div>
+<!-- END layout-wrapper -->
 
-    <!-- customizer -->
-    @include('layouts.right-sidebar')
+<!-- customizer -->
+@include('layouts.right-sidebar')
 
-    <!-- vendor-scripts -->
-    @include('layouts.vendor-scripts')
+<!-- vendor-scripts -->
+@include('layouts.vendor-scripts')
 
 </body>
 
