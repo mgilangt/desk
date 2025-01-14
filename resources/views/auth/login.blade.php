@@ -40,8 +40,8 @@
                                                         class="text-danger">*</span></label>
                                                 <input id="email" type="email"
                                                     class="form-control @error('email') is-invalid @enderror" name="email"
-                                                    value="admin@themesbrand.com" required autocomplete="email" autofocus
-                                                    value="admin@themesbrand.com">
+                                                    value="admin@admin.com" required autocomplete="email" autofocus
+                                                    value="admin@admin.com">
                                                 @error('email')
                                                     <span class="invalid-feedback" role="alert">
                                                         <strong>{{ $message }}</strong>
@@ -61,7 +61,7 @@
                                                     <input type="password"
                                                         class="form-control @error('password') is-invalid @enderror"
                                                         placeholder="Enter password" id="password-input" name="password"
-                                                        required autocomplete="current-password" value="12345678">
+                                                        required autocomplete="current-password" value="12341234">
                                                     <button type="button"
                                                         class="btn btn-link position-absolute h-100 end-0 top-0"
                                                         id="password-addon">
