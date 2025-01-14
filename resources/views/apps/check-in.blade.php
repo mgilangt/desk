@@ -71,7 +71,7 @@
                         <!-- end card -->
                     </div>
 
-                    <div class="col-xl-8" id="participant-detail">
+                    <div class="col-xl-8 d-none" id="participant-detail">
                         <div class="card">
                             <div class="card-header align-items-center d-flex">
                                 <h4 class="card-title mb-0 flex-grow-1">Participant</h4>

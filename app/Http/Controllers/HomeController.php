@@ -23,7 +23,7 @@ class HomeController extends Controller
      */
     public function root()
     {
-        return view('index');
+        return view('apps.registration');
     }
 
     public function index(Request $request)
