@@ -1,0 +1,21 @@
+@extends('layouts.master')
+@section('title')
+    Dashboard
+@endsection
+@section('css')
+    <!-- plugin css -->
+    <link href="{{ URL::asset('build/libs/jsvectormap/css/jsvectormap.min.css') }}" rel="stylesheet" type="text/css" />
+@endsection
+@section('page-title')
+    Dashboard
+@endsection
+@section('body')
+
+    <body data-layout="horizontal" data-bs-theme="dark">
+    @endsection
+    @section('content')
+    @endsection
+    @section('scripts')
+        <!-- App js -->
+        <script src="{{ URL::asset('build/js/app.js') }}"></script>
+    @endsection
